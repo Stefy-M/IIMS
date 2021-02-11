@@ -1,0 +1,72 @@
+<p>register works!</p>
+<div class="card" style="width: 60rem; margin-top: 10%">
+  <article class="card-body">
+    <h4 class="card-title text-center mb-4 mt-1">Register New Administrator</h4>
+    <hr />
+    <form (submit) ="register()">
+      <!-- form-group// -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input [(ngModel)]="this.name" name="name" class="form-control" placeholder="First Name and Last Name" type="text" />
+        </div>
+        <!-- input-group.// -->
+      </div>
+       <!-- form-group// -->
+       <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input [(ngModel)]="this.agency" name="agency" class="form-control" placeholder="Agency" type="text" />
+        </div>
+        <!-- input-group.// -->
+      </div>
+       <!-- form-group// -->
+       <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input [(ngModel)]="this.npn" name="npn" class="form-control" placeholder="NPN" type="text" />
+        </div>
+        <!-- input-group.// -->
+      </div>
+      <!-- form-group// -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input
+            name=""
+            class="form-control"
+            placeholder="Email or login"
+            type="email"
+            [(ngModel)]="this.email"
+            name="email"
+          />
+        </div>
+        <!-- input-group.// -->
+      </div>
+      <!-- form-group// -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input [(ngModel)]="this.password" name ="password" class="form-control" placeholder="******" type="password" />
+        </div>
+        <!-- input-group.// -->
+      </div>
+      <!-- form-group// -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+      </div>
+      <!-- form-group// -->
+      <p class="text-center"><a href="#" class="btn" (click)= "toLogin()">Back</a></p>
+    </form>
+  </article>
+</div>
